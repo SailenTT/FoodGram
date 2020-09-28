@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FoodGram</string>
+    <string-array name="posts_filter">
+        <item>Nuovi</item>
+        <item>Top</item>
+        <item>Più vecchi</item>
+    </string-array>
+</resources>

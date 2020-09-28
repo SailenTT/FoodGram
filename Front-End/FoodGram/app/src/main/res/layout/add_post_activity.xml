@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/add_post_wallpaper">
+
+    <Button
+        android:id="@+id/btn_addPost"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="105dp"
+        android:backgroundTint="#24a0ed"
+        android:onClick="onClick_btnAddPost"
+        android:text="Inserisci"
+        android:theme="@style/Widget.AppCompat.Button.Borderless.Colored"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_imageUpload" />
+
+    <TextView
+        android:id="@+id/txt_imgInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Inserisci la foto qui sotto"
+        android:textColor="#F6F5F5"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_imageUpload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spinner_restaurants_names" />
+
+    <ImageButton
+        android:id="@+id/btn_imageUpload"
+        android:layout_width="243dp"
+        android:layout_height="181dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="onClick_btnImageUpload"
+        android:src="@android:drawable/ic_menu_gallery"
+        app:layout_constraintBottom_toTopOf="@+id/btn_addPost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_imgInfo" />
+
+    <Spinner
+        android:id="@+id/spinner_restaurants_names"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:dropDownWidth="wrap_content"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/btn_imageUpload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="323dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="Inserisci i dati"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_restaurants_names"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
